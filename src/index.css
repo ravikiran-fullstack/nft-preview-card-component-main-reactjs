@@ -37,9 +37,33 @@ body {
   border-radius: 10px;
 }
 
+.cardImage {
+  position: relative;
+  border-radius: 2%;
+  width: 100%;
+  overflow: hidden;
+}
+
 .cardImage img {
   width: 100%;
   border-radius: 10px;
+  cursor: pointer;
+}
+
+.image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: hsla(178, 100%, 50%, 0.5) url(./images/icon-view.svg) center/4rem
+    no-repeat;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.image__overlay:hover {
+  opacity: 1;
 }
 
 .cardBody {

@@ -7,6 +7,7 @@ function App() {
       <div className='card'>
         <div className='cardImage'>
           <img src={image} alt='' />
+          <div class='image__overlay'></div>
         </div>
         <div className='cardBody'>
           <div className='cardTitle'>
